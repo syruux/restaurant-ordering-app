@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <!-- Fonts from Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <h1>Jimmy's Diner</h1>
+                <h3>The best burgers and pizzas in town.</h3>
+            </header>
+        </div>
+        <div class="container">
+            <main>
+                <!-- menu from js here -->
+            </main>
+            <div id="payment-modal" class="payment-modal hidden">
+                <h2>Enter card details</h2>
+                <form class="card-form">
+                    <input
+                    type="text" 
+                    autocomplete="cc-name"
+                    placeholder="Enter your name" 
+                    name="name"
+                    required/>
+                    <input
+                    type="tel" 
+                    placeholder="Enter card number" 
+                    autocomplete="cc-number"
+                    inputmode="numeric"
+                    maxlength="19"
+                    name="cardNumber"
+                    required/>
+                    <input
+                    type="tel" 
+                    placeholder="Enter CVV" 
+                    autocomplete="cc-csc"
+                    inputmode="numeric"
+                    maxlength="3"
+                    name="cardCVV"
+                    required/>
+                    <button type="submit" id="pay-btn" class="pay-btn">Pay</button>
+                </form>
+            </div>
+            <div id="order-complete" class="order-complete hidden">
+                <h2>Thanks! Your order is on its way!</h2>
+            </div>
+        </div>
+	<script type="module" src="index.js"></script>
+    </body>
+</html>

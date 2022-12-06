@@ -1,0 +1,206 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Smythe', cursive;
+} 
+
+/* Layout */
+
+.container{
+    width: 600px;
+    margin: 0 auto;
+}
+
+header{
+    background-image: url(images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png);
+    background-repeat: no-repeat;
+    padding: 40px 0 90px 40px;
+    color: #fff;
+}
+
+main{
+    padding: 0 45px 0;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 50px;
+    padding-top: 45px;
+}
+
+.item-inner{
+    display: flex;
+}
+
+.checkout-section{
+    text-align: center;
+    margin: 40px 0 50px 0;
+}
+
+.cart-container{
+    padding: 58px 0 28px;
+    border-bottom: 2px solid #393333;
+    margin: 0 0 10px 0;
+}
+
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-price-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-title{
+    display: flex;
+    gap: 10px;
+}
+
+.payment-modal{
+    text-align: center;
+    width: 475px;
+    height: 475px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4px;
+    filter: drop-shadow(5.18654px 5.18654px 255.437px rgba(0, 0, 0, 0.5));
+}
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.order-complete{
+    text-align: center;
+    background-color: #ECFDF5;
+    margin: 45px auto;
+    padding: 50px;
+    width: 410px;
+}
+
+/* Utility class */
+
+.hidden{
+    display: none;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+p{
+    margin: 0;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 39px;
+    margin-bottom: 6px;
+}
+
+h3{
+    font-size: 22px;
+}
+
+.item-emoji{
+    font-size: 80px;
+    opacity: 0.72;
+    margin: 0 30px 0 0;
+}
+
+h2{
+    font-size: 28px;
+}
+
+.item-ingredients{
+    font-size: 16px;
+    color: #8B8B8B;
+    margin-top: 8px;
+}
+
+.item-price{
+    font-size: 20px;
+    margin-top: 14px;
+}
+
+.payment-modal h2{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 25px 0 46px;
+}
+
+.card-form input{
+    padding: 20px 25px;
+    font-size: 20px;
+}
+
+.order-complete h2{
+    font-size: 32px;
+    color: #065F46;
+}
+
+/* Buttons */
+
+.add-btn{
+    text-align: center;
+    color: #3C3C3C;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.remove-item-btn{
+    border: none;
+    background-color: #fff;
+    font-size: 12px;
+    color: #BBBBBB;
+    cursor: pointer;
+}
+
+.purchase-btn{
+    width: 100%;
+    padding: 18px 0;
+    border: none;
+    border-radius: 3px;
+    background-color: #16DB99;
+    margin: 50px 0 0 0;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.pay-btn{
+    margin-top: 40px;
+    background-color: #16DB99;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
